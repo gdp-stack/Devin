@@ -1,0 +1,8 @@
+/* Style pour le canvas de l'effet de flamme */
+#flameCanvas {
+    position: fixed;
+    left: 38%;
+    bottom: -12.5%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+}

@@ -1,0 +1,153 @@
+/* GuessForm.css */
+.guess-form-container {
+    margin-top: 20px; /* Ajoutez un espace en haut */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-wrapper {
+    display: flex;
+    justify-content: center; /* Centre le formulaire horizontalement */
+    align-items: center; /* Alignement vertical */
+    gap: 10px; /* Espace entre le champ de saisie et le bouton */
+    flex-wrap: nowrap;
+    width: auto;
+    margin-bottom: 40px;
+}
+
+.input-field, .submit-button {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.input-field {
+    border: 1px solid #ccc;
+     /* Espace entre le champ de saisie et le bouton */
+}
+
+.guess-button {
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #cccccc; /* ou toute autre couleur souhaitée */
+    color: white;
+    /* Ajoutez d'autres styles spécifiques pour ce bouton si nécessaire */
+  }
+
+.game-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.devin-banner-container {
+    position: relative;
+    margin-right: 80px;
+    display: inline-block; /* S'adapte à la taille des images */
+}
+
+.devin-image {
+    width: 256px; 
+    animation: fadeInZoom 0.5s ease-out forwards; /* Utilisez l'animation définie */
+}
+
+.banner-image {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: fadeInBanner 1s ease-in forwards; /* Animation commencera après le fadeInZoom */
+}
+
+@keyframes fadeInBanner {
+    from {
+        opacity: 0;
+        transform: translateY(-20px) translateX(-50%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) translateX(-50%);
+    }
+}
+
+@keyframes fadeInZoom {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .game-over-animation, .score-animation {
+    margin-bottom: 40px;
+    font-size: 1.2rem; /* Taille de police plus grande */
+    font-weight: bold; /* Texte en gras */
+    color: #967b56; /* Couleur du texte, ajustez selon votre thème */
+    animation: fadeIn 2s ease-out; /* Effet d'apparition */
+  }
+
+.score-table-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Modifications pour le style mystique et moyenâgeux */
+.score-table {
+    background-color: #f4e9dc; /* Couleur de fond style parchemin */
+    border: 2px solid #967b56; /* Bordure extérieure pour un look ancien */
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75); /* Ombre portée pour effet de profondeur */
+}
+
+.score-table th, .score-table td {
+    border: 1px solid #a68b60; /* Bordures internes des cellules pour un style ancien */
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif; /* Police de caractères pour un effet moyenâgeux */
+    color: #563d28; /* Couleur de texte rappelant le style ancien */
+}
+
+.score-table th {
+    background-color: #a68b60; /* Couleur de fond des en-têtes pour un contraste */
+    color: white;
+    font-size: 20px;
+    letter-spacing: 1px; /* Espacement des lettres pour un style plus élaboré */
+}
+
+input, button {
+    font-size: 16px;
+}
+
+button {
+    width: auto; /* Permet au bouton de s'ajuster au contenu */
+    background-color: #cccccc;
+    color: white;
+    cursor: not-allowed;
+}
+
+.submit-button {
+    border: none;
+    background-color: #cccccc;
+    color: white;
+    cursor: pointer;
+}
+  
+.submit-button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+

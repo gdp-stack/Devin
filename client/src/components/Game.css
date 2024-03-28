@@ -1,0 +1,32 @@
+/* Game.css */
+.game-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.game-controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
+}
+
+.new-game-button, .logout-button {
+  padding: 10px;
+  margin: 5px;
+  background-color: #61dafb;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.new-game-button:hover, .logout-button:hover {
+  background-color: #4098d7;
+}
+
+.game-over-text {
+  margin-top: 20px;
+  color: #282c34;
+}

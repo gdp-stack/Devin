@@ -1,0 +1,58 @@
+.rules-page-container {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+  
+.rules-container {
+background-color: #f9f9f9;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+max-width: 80%;
+padding: 20px;
+margin: 20px;
+}
+
+.rules-container h2, .rules-container h3 {
+color: #36454F;
+}
+
+section {
+margin-bottom: 30px;
+}
+
+.screenshot {
+    width: 90%;
+    max-width: 500px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 15px; /* Ajoute des bords arrondis aux images */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Ajoute une ombre douce pour de la profondeur */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Douce transition pour le survol */
+}
+  
+/* Style pour l'effet de survol des images */
+.screenshot:hover {
+    transform: scale(1.05); /* Légère augmentation de taille au survol */
+    box-shadow: 0 8px 12px rgba(0,0,0,0.2); /* Ombre plus marquée pour un effet de profondeur */
+}
+  
+.rules-container p {
+    text-align: justify;
+    line-height: 1.6;
+    font-size: 16px;
+    color: #333;
+}
+
+.keyword {
+    font-weight: bold; /* Rend le texte en gras */
+    color: #4C5C68; /* Couleur personnalisée pour les mots clés, ajustez selon votre palette */
+  }
+  
+  
+@media screen and (max-width: 768px) {
+    .screenshot {
+      width: 100%;
+    }
+}
+

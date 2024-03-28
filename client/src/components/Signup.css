@@ -1,0 +1,54 @@
+/* Styles spécifiques au composant Signup */
+.signup-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  width: 100%;
+  max-width: 400px;
+}
+
+.signup-container input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.signup-container .button {
+  padding: 12px 20px;
+  background-color: #4C5C68;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+  border: 2px solid transparent;
+}
+
+.signup-container .button:hover {
+  background-color: #36454F;
+  border-color: #2C3E50;
+}
+
+.signup-container .button:active {
+  transform: translateY(2px);
+}
+
+.signup-container .error {
+  color: #D8000C;
+  background-color: #FFD2D2;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  border: 1px solid #FFBABA;
+}

@@ -1,0 +1,45 @@
+/* Classement.css */
+.classement-page-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f4e9dc; /* Couleur de fond style parchemin */
+  color: #563d28; /* Couleur de texte rappelant le style ancien */
+}
+
+.classement-table {
+  width: 80%;
+  border-collapse: collapse;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Ombre portée pour effet de profondeur */
+}
+
+.classement-table th, .classement-table td {
+  border: 1px solid #967b56; /* Bordures pour un style ancien */
+  text-align: left;
+  padding: 8px;
+}
+
+.classement-table th {
+  background-color: #a68b60; /* Couleur de fond des en-têtes */
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.classement-table tr {
+  background-color: white; /* Fond blanc pour toutes les lignes */
+}
+
+/* Augmentation de la spécificité pour le style de la ligne mise en surbrillance */
+.classement-table .highlighted, .classement-table .highlighted td {
+  background-color: #a68b60 !important; /* Force la couleur de surbrillance pour le joueur authentifié */
+  color: white !important;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .classement-table {
+      width: 100%;
+  }
+}
