@@ -1,22 +1,18 @@
 # Devin - Le Jeu de Devinette Solo
 
-
-
-
-## README - Prochaine mise à jour du Jeu 
-
-
 ## Version Actuelle : MVP (Date de lancement : xx/xx/xxxx)
 
 ### Fonctionnalités Actuelles
 - Système de score basé sur le nombre de tentatives.
+
+# README - Prochaine mise à jour du Jeu 
+
+## Prochaines Mises à Jour
+**Version 1.1 (xx/xx/xxxx)**
 - Bonus de rapidité pour des scores plus élevés.
 - Séries de victoires avec multiplicateurs de score.
 - Défis quotidiens pour des récompenses spéciales.
 - Système de niveaux et de progression pour les joueurs.
-
-### Prochaines Mises à Jour
-**Version 1.1 (xx/xx/xxxx)**
 - Introduction du mode compétition hebdomadaire/mensuelle avec classement et récompenses.
 - Options de personnalisation de l'interface pour les joueurs.
 
